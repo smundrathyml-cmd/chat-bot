@@ -1,1 +1,180 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #0B0B0B;
+    padding-top: 10px;
+}
+
+.primary-font {
+    font-family: "Poppins", sans-serif;
+}
+.secondary-font {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-custom {
+  background-color: #0B0B0B;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.offcanvas {
+  background-color: #0B0B0B !important;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas {
+    width: 75%;
+  }
+  
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+}
+
+.btn-primary {
+    background-color: #044582 !important;
+    border-color: #044582 !important;
+    color: #fff;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.40rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0559a0 !important;
+    border-color: #0559a0 !important;
+    box-shadow: 0 4px 8px rgba(4, 69, 130, 0.4);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(4, 69, 130, 0.3);
+}
+
+
+
+
+
+.footer {
+  background-color: #0B0B0B;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.footer-shadow {
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer h5 {
+  font-weight: 600;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 3px 0;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-address, .footer-contact {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #044582;
+  opacity: 1;
+  margin: 0;
+}
+
+.footer-bottom {
+  background-color: #0B0B0B;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-text:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-links {
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #044582;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.main-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto; 
+}
+
+

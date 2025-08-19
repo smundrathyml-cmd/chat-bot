@@ -1,0 +1,49 @@
+<div class="chat-widget-container">
+  <div class="chat-tooltip" [class.hidden]="isTooltipHidden">
+    Welcome back,<br> how may I help you today?
+    <button class="tooltip-close" (click)="closeTooltip()">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <button class="chat-button" (click)="toggleChat()" aria-label="Chat with us">
+    <i class="fas" [ngClass]="isChatOpen ? 'fa-times' : 'fa-comment'"></i>
+  </button>
+
+  <div class="chat-panel" [class.open]="isChatOpen">
+    <div class="chat-header">
+      <div class="chat-title">
+        <img src="../../../assets/novatalk-logo.png" alt="NovaTalk" height="24">
+      </div>
+      <button class="chat-close" (click)="toggleChat()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="chat-messages">
+      <div class="message bot">
+        <div class="message-content">
+          Hi there! How can I help you today?
+        </div>
+        <span class="message-time">12:00 PM</span>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <form (submit)="$event.preventDefault()">
+        <div class="input-group">
+          <input 
+            type="text" 
+            class="form-control chat-input" 
+            placeholder="Type your message..." 
+            disabled
+          >
+          <button class="btn btn-primary send-button" disabled>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="chat-disclaimer">
+          Chat functionality will be implemented later
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

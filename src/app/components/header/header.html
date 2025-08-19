@@ -1,1 +1,44 @@
-<p>header works!</p>
+<header class="app-header">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom py-4">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/">
+        <img src="../../../assets/novatalk-logo.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="offcanvas-title" routerLink="/">
+            <img src="../../../assets/novatalk-logo.png" alt="Logo" height="30" id="offcanvasNavbarLabel" class="d-inline-block align-text-top">
+          </a>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/how-it-works" routerLinkActive="active">How it Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/features" routerLinkActive="active">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/pricing" routerLinkActive="active">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/integrations" routerLinkActive="active">Integrations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/resources" routerLinkActive="active">Resources</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
